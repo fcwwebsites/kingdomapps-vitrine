@@ -43,3 +43,5 @@ section h2{font-size:clamp(1.6rem,3.4vw,2.3rem);letter-spacing:-.01em;margin:0 0
 .float-wa svg{width:24px;height:24px}.float-wa span{display:none}@media(min-width:760px){.float-wa span{display:inline;padding-right:6px}}
 @media(max-width:760px){.nav nav{display:none}.hero{padding:48px 0 40px}.grid{grid-template-columns:repeat(2,1fr);gap:12px}.card-actions .btn{flex:1;justify-content:center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+.period{display:inline-flex;gap:4px;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px;margin:8px 12px 8px 0}.pbtn{border:0;background:transparent;padding:8px 18px;border-radius:999px;font:inherit;font-weight:700;cursor:pointer;color:var(--muted)}.pbtn.on{background:var(--accent);color:#fff}

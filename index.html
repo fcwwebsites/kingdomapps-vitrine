@@ -270,29 +270,35 @@
   <h2>Como funciona</h2>
   <ol class="steps">
     <li><h3>Escolha um modelo</h3><p>Navegue pelos segmentos e abra a demonstração.</p></li>
-    <li><h3>Escolha o plano</h3><p>Mensal ou anual.</p></li>
+    <li><h3>Escolha o plano</h3><p>Starter, Plus ou Premium, no mensal ou no anual.</p></li>
     <li><h3>Fale com a gente no WhatsApp</h3><p>A mensagem já sai com o modelo e o plano. Você envia seus dados: nome, logo, cardápio, horários e contatos.</p></li>
     <li><h3>Seu site no ar</h3><p>A gente personaliza, publica e te manda o link.</p></li>
   </ol>
 </div></section>
 
 <section id="planos" class="plans"><div class="wrap">
-  <h2>Escolha como prefere pagar</h2>
-  <p class="intro">O mesmo site nos dois planos. Muda só a forma de pagamento.</p>
+  <h2>Escolha seu plano</h2>
+  <p class="intro">O mesmo site nos planos Starter e Plus. Muda o endereço: no Starter, o site fica no endereço da Vitrine; no Plus, no seu domínio próprio. O Premium é um site feito do zero, sob medida.</p>
+  <div class="period" role="group" aria-label="Forma de pagamento"><button type="button" class="pbtn on" data-period="Mensal" aria-pressed="true">Mensal</button><button type="button" class="pbtn" data-period="Anual" aria-pressed="false">Anual</button></div>
   <p class="chosen" aria-live="polite">Modelo escolhido: <strong id="chosen-name">nenhum ainda</strong> · <a href="#modelos">trocar</a></p>
   <div class="pgrid">
     <article class="plan">
-      <h3>Plano Mensal</h3>
-      <p class="price"><span data-price="PRECO_MENSAL">{{PRECO_MENSAL}}</span>/mês</p>
-      <ul><li>Modelo escolhido</li><li>Personalização com os dados do seu negócio</li><li>Hospedagem</li><li>Botão de WhatsApp</li><li>Suporte pelo WhatsApp</li></ul>
-      <a class="btn primary plan-cta" data-plan="Mensal" href="https://wa.me/5511947904394?text=Ol%C3%A1!%20Vi%20a%20Vitrine%20e%20quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">Quero o mensal</a>
+      <h3>Starter</h3>
+      <p class="price"><span class="pm">R$ 12/mês</span><span class="pa" hidden>R$ 120/ano <small>equivale a R$ 10/mês</small></span></p>
+      <ul><li>Site no endereço da Vitrine (sem domínio próprio)</li></ul>
+      <a class="btn primary plan-cta" data-plan="Starter" href="https://wa.me/5511947904394?text=Ol%C3%A1!%20Vi%20a%20Vitrine%20e%20quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">Quero o Starter</a>
     </article>
     <article class="plan featured">
-      <span class="ribbon">Economize <span data-price="ECONOMIA">{{ECONOMIA}}</span></span>
-      <h3>Plano Anual</h3>
-      <p class="price"><span data-price="PRECO_ANUAL">{{PRECO_ANUAL}}</span>/ano <small>(equivale a <span data-price="PRECO_ANUAL_POR_MES">{{PRECO_ANUAL_POR_MES}}</span>/mês)</small></p>
-      <ul><li>Tudo do mensal, pagando uma vez por ano.</li></ul>
-      <a class="btn primary plan-cta" data-plan="Anual" href="https://wa.me/5511947904394?text=Ol%C3%A1!%20Vi%20a%20Vitrine%20e%20quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">Quero o anual</a>
+      <h3>Plus</h3>
+      <p class="price"><span class="pm">R$ 25/mês</span><span class="pa" hidden>R$ 250/ano <small>equivale a R$ 20,83/mês</small></span></p>
+      <ul><li>Site no seu domínio próprio</li><li>Taxa de registro do domínio à parte</li></ul>
+      <a class="btn primary plan-cta" data-plan="Plus" href="https://wa.me/5511947904394?text=Ol%C3%A1!%20Vi%20a%20Vitrine%20e%20quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">Quero o Plus</a>
+    </article>
+    <article class="plan">
+      <h3>Premium</h3>
+      <p class="price">Sob consulta</p>
+      <ul><li>Site do zero, sob medida</li></ul>
+      <a class="btn primary plan-cta" data-plan="Premium" data-open="1" href="https://wa.me/5511947904394?text=Ol%C3%A1!%20Vi%20a%20Vitrine%20e%20quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">Consultar no WhatsApp</a>
     </article>
   </div>
   <p class="note">Valores e formas de pagamento confirmados no WhatsApp antes de qualquer cobrança.</p>
@@ -305,7 +311,7 @@
   <details><summary>Posso mudar informações depois?</summary><p>Pode. Horário, cardápio, fotos ou contatos: é só pedir pelo WhatsApp.</p></details>
   <!-- FAQ 4 OMITIDA até definição oficial (copy: "{{NOTA_DOMINIO}}" condicional):
   <details><summary>Posso usar um domínio próprio (ex.: meunegocio.com.br)?</summary><p>{{NOTA_DOMINIO}}</p></details> -->
-  <details><summary>Quanto custa?</summary><p>Mensal a partir de <span data-price="PRECO_MENSAL">{{PRECO_MENSAL}}</span>/mês, ou anual por <span data-price="PRECO_ANUAL">{{PRECO_ANUAL}}</span>. Os valores são confirmados no WhatsApp.</p></details>
+  <details><summary>Quanto custa?</summary><p>Starter: R$ 12/mês ou R$ 120/ano (equivale a R$ 10/mês), no endereço da Vitrine. Plus: R$ 25/mês ou R$ 250/ano (equivale a R$ 20,83/mês), no seu domínio próprio, com a taxa de registro do domínio à parte. Premium: site do zero, sob medida, sob consulta.</p></details>
   <!-- FAQ 6 OMITIDA até definição oficial (copy: "{{PRAZO_ENTREGA}}" condicional):
   <details><summary>Quanto tempo leva para o site ficar pronto?</summary><p>{{PRAZO_ENTREGA}}</p></details> -->
   <details><summary>Vocês fazem sites para igrejas em Portugal?</summary><p>Sim. Os modelos de igreja também têm versão em português de Portugal.</p></details>
