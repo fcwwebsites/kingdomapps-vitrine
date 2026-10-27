@@ -9,7 +9,7 @@
     empty.hidden=n>0;
   });});
   var period='Mensal';
-  function label(p){return p==='Premium'?'Premium (sob consulta)':p+' '+period;}
+  function label(p){return p+' '+period;}
   document.querySelectorAll('.pbtn').forEach(function(b){b.addEventListener('click',function(){
     period=b.getAttribute('data-period');
     document.querySelectorAll('.pbtn').forEach(function(x){var on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on?'true':'false');});
@@ -22,8 +22,8 @@
     document.getElementById('chosen-name').textContent=chosen||'nenhum ainda';
     document.querySelectorAll('.plan-cta').forEach(function(a){
       var p=label(a.getAttribute('data-plan'));
-      if(chosen) a.href=msg(chosen,p);
-      else if(a.hasAttribute('data-open')) a.href=WA+encodeURIComponent('Olá! Quero saber mais sobre o plano '+p+'.');
+      if(a.hasAttribute('data-open')) a.href=WA+encodeURIComponent('Olá! Quero um orçamento do plano Premium para o meu negócio.');
+      else if(chosen) a.href=msg(chosen,p);
     });
   }
   document.querySelectorAll('[data-model]').forEach(function(b){b.addEventListener('click',function(){
